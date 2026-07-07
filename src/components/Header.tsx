@@ -42,6 +42,7 @@ import { ircaTalukCenters, ircaCenterIdMap } from '../data/centers';
 import { ircaNavigation } from '../utils/irca-details-handler';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import kargovLogo from '../images/kargovlogo2.png';
 
 // Helper function to check if village has facilities
 const hasFacilities = (village: any): boolean => {
@@ -269,7 +270,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-3 group">
             <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-md p-1">
-              <img src="/src/images/kargovlogo2.png" alt="Logo" className="w-full h-full object-contain" />
+              <img src={kargovLogo} alt="Logo" className="w-full h-full object-contain" />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-primary">IRCA Karnataka</h1>

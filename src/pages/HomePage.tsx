@@ -32,6 +32,7 @@ import {
   getDynamicIRCAMapping
 } from '../services/supabaseService';
 import MapComponent from '../components/MapComponent';
+import heroVideo from '../images/hero1.mp4';
 
 // Animation variants
 const fadeIn: Variants = {
@@ -387,7 +388,7 @@ const HomePage = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden text-white">
         {/* Video Background */}
         <video
-          src="/src/images/hero1.mp4"
+          src={heroVideo}
           autoPlay
           muted
           loop

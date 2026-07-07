@@ -28,6 +28,7 @@ import {
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Alert, AlertDescription, AlertTitle } from '../components/ui/alert';
 import { Eye, EyeOff, AlertCircle, CheckCircle, Info, Shield, Lock, User, Mail, Phone } from 'lucide-react';
+import kargovLogo from '../images/kargovlogo2.png';
 
 const RegisterPage: React.FC = () => {
   const { register, error, isLoading } = useAuth();
@@ -96,7 +97,7 @@ const RegisterPage: React.FC = () => {
         <Card className="shadow-xl border-0 animate-fade-in-up">
           <CardHeader className="space-y-1 text-center">
             <div className="mx-auto w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mb-4 p-2">
-              <img src="/src/images/kargovlogo2.png" alt="IRCA Karnataka Logo" className="w-full h-full object-contain" />
+              <img src={kargovLogo} alt="IRCA Karnataka Logo" className="w-full h-full object-contain" />
             </div>
             <CardTitle className="text-2xl font-bold text-primary">Create Your Account</CardTitle>
             <CardDescription className="text-muted-foreground">
